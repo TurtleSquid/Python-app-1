@@ -38,3 +38,70 @@ def hello():
 if __name__=='__main__':
 app.run()
 
+12/27
+    Control C will take down a webserver
+    git add main.py will bring it back up
+    git push origin feat/create-app will push branch to github
+    Green indicates an unstaged branch
+    "Clear" will clear everything in the terminal
+    .py will indicate that python is being written and will enable lints
+    Postman is case sensitive
+    An array will determine whether or not postman uses a get, post, delete, etc. Get is the default, so anything besides that must be declared
+    'Working tree clean' means all modifications and additional files have been staged/committed
+    Arrays and lists are synonymous
+    -m will save and commit current files. -am will add and commit all unstaged files. Best for saving modified files.
+
+VARIABLES & DATATYPES
+    1. Boolean
+    2. Integer - Represents a whole number. Is a real number.
+    3. Long
+    4. Float - Assigns a value with a single declaration. Tends to be in decimal format. Used for better precision. Is a real number.
+    5. String
+    6. List
+    7. Object
+
+
+
+CONDITIONAL STATEMENTS
+    IF: If this occurs, state this
+    IF-ELSE: If this occurs, state this. Otherwise (if this does not occur), state this.
+    IF-ELSEIF: If this occurs, state this. If it is not this but is this instead, state this. If it is not either of these two (or more) options, states this.
+        Multiple elseifs are possible.
+
+
+Dockerfile: A text document containing all commands a user could call on the command line to assemble an image
+    Dockerfiles are typically uppercase to distinguish them from arguments
+    
+    Docker Commands
+        FROM - Creates a layer from the Ubuntu 20/04
+            FROM ubuntu: 20.04
+        PULL - Adds files from Docker repository
+            PULL /file
+        RUN - Builds container
+            RUN make /file
+        CMD - Specifies what command to run within the container
+            CMD python/file/file/py
+
+| Cmd | Description |
+| :-- | :---------- |
+| `docker ps` | Current running containers |
+
+ ls - Lists what is in the current directory (files/folders)
+
+ exit - exits out of container or shell
+
+ root - the furthest file thing,(/)
+ 
+docker images - alias for `docker image ls`. Will list all current images on local host
+docker run -d shit-2:latest - will run any image in detached mode
+docker exec -it - executes secure shell with interactive and tty prompt
+docker rm - Will remove stopped containers
+Docker rmi - Alias for docker image rm. Will remove image from local host
+docker stop - Will stop any running containers
+docker ps -a - -a is a flag for all. Runs all stopped containers
+pwd - shows current directory
+
+Double quote arrays
+
+
+Docker Image: It is a read-only file that, once executed, creates a docker container
